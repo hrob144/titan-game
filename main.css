@@ -1,0 +1,165 @@
+/* sets background image and default text for webpage */
+html {
+    background-image: url('images/stardust.jpg');
+    font-family: monospace;
+}
+
+div {
+    display: flex;
+    align-content: center
+}
+
+#contents {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 64em
+}
+
+/* formats the title & subtitle of the webpage */
+h1, h2 {
+    text-align: center;
+    margin-top: 1em;
+    color: white    
+}
+
+/* sets formatting for all game-related text */
+p {
+    padding-left: 2em;
+    padding-right: 2em; 
+    color: black
+}
+
+/* sets the blink animation on the underscore in the input box */
+span {
+    animation: blink 1s infinite
+}
+
+/* sets formatting on the 16:9 storyBox */
+#storyBox {
+    position: relative;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 36em;
+    width: 64em;
+    background-color: ghostwhite;
+    opacity: 0.2;
+    box-shadow: 0 0 10px #777777;
+    overflow: hidden
+}
+
+/* formats the textBox, a subset of the storyBox */
+#textBox {
+    color: black;
+    display: block;
+    overflow: scroll
+}
+
+/* sets formatting on the inputBox ... same as storyBox, but shorter */
+#inputBox {
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    width: 64em;
+    background-color: ghostwhite;
+    opacity: 0.2;
+    box-shadow: 0 0 10px #777777;
+    overflow: auto
+}
+
+/* sets formatting on the startButton */
+#startButton {
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    width: 8em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* sets formatting on the resetButton, the same as the startButton */
+#resetButton {
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    width: 8em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#healthBox {
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: ghostwhite;
+    opacity: 0.2;
+    box-shadow: 0 0 10px #777777;
+    color: black;
+    width: 11.4em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#placeholderBox1 {
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: ghostwhite;
+    opacity: 0.2;
+    box-shadow: 0 0 10px #777777;
+    color: black;
+    width: 11.4em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#placeholderBox2 {
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: ghostwhite;
+    opacity: 0.2;
+    box-shadow: 0 0 10px #777777;
+    color: black;
+    width: 11.4em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#copyright {
+    text-align: right;
+    color: lightgrey
+}
+
+/* defines the blink animation for the underscore */
+@keyframes blink     {
+    to {opacity: 0.0;}
+}
