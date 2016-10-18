@@ -20,7 +20,7 @@ survivors are soon to discover on the desolate and dangerous surface below.
 ####Features to implement
 --------------------
 
-FOR STORY <p>'s ... MAX LENGTH OF 107 CHARACTERS TO PREVENT THE TYPEWRITER EFFECT FROM
+FOR STORY /*<p>'s/* ... MAX LENGTH OF 107 CHARACTERS TO PREVENT THE TYPEWRITER EFFECT FROM
 BREAKING.
 
 Text effects ... make the text appear on screen as if being typed into a terminal.
