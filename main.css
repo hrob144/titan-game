@@ -30,6 +30,15 @@ p {
     color: black
 }
 
+#duckLips {
+    padding-left: 2em;
+    padding-right: 0em;
+}
+
+#inputText {
+    padding-left: 1em;
+}
+
 /* sets the blink animation on the underscore in the input box */
 span {
     animation: blink 1s infinite
@@ -83,7 +92,8 @@ span {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-family: monospace;
+    font-size: 16px
 }
 
 /* sets formatting on the resetButton, the same as the startButton */
@@ -100,7 +110,8 @@ span {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-family: monospace;
+    font-size: 16px
 }
 
 #healthBox {
@@ -156,6 +167,8 @@ span {
 
 #copyright {
     text-align: right;
+    font-family: sans-serif;
+    font-size: 10px;
     color: lightgrey
 }
 

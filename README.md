@@ -33,6 +33,18 @@ Include the blinking marker at the end of the line of text for authenticity.
 1. Open index.html using Google Chrome, ensuring that all directories are saved on 
    your hard drive.
    
-2. Enter your character's name when prompted.
+2. Click the Begin button.
 
 3. Enjoy the show.
+
+--------------------
+####Storyboard
+--------------------
+
+Chapter 1. "The Heart of Darkness"
+<em>The user begins the journey already aboard the Interplanetary Transport System with 199
+other colonists-to-be. The year is 2324, and the Heart of Darkness is the fourteenth ship
+of its kind to carry hundreds of colonists to Saturn's moon Titan. Our story begins with
+a transmission from the International Space Station notifying the Captain of the Heart
+of Darkness that contact with the 2,500 colonists already on the surface of Titan was
+unexpectedly lost shortly after the Heart of Darkness departed Earth.</em>
