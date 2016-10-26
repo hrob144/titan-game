@@ -1,0 +1,18 @@
+{
+	"predef": {
+		"titan-game": true,
+		"prompt": true
+	},
+
+	"bitwise": true,
+	"camelcase": true,
+	"curly": true,
+	"eqeqeq": true,
+	"latedef": true,
+	"undef": true,
+	"unused": true,
+	"strict": false,
+	"devel": true,
+
+	"browser": true
+}

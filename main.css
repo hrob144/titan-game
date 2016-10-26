@@ -6,7 +6,6 @@ html {
 
 div {
     display: flex;
-    align-content: center
 }
 
 #contents {
@@ -28,20 +27,6 @@ p {
     padding-left: 2em;
     padding-right: 2em; 
     color: black
-}
-
-#duckLips {
-    padding-left: 2em;
-    padding-right: 0em;
-}
-
-#inputText {
-    padding-left: 1em;
-}
-
-/* sets the blink animation on the underscore in the input box */
-span {
-    animation: blink 1s infinite
 }
 
 /* sets formatting on the 16:9 storyBox */
@@ -67,23 +52,36 @@ span {
 
 /* sets formatting on the inputBox ... same as storyBox, but shorter */
 #inputBox {
-    margin-top: 0.5em;
+    margin-top: 0.8em;
     margin-left: auto;
     margin-right: auto;
     height: 3em;
     width: 64em;
+    display: inline-block;
     background-color: ghostwhite;
     opacity: 0.2;
     box-shadow: 0 0 10px #777777;
-    overflow: auto
+    overflow: hidden
+}
+
+/* sets formatting on the form used for user input */
+#inputText {
+    margin-left: 1em;
+    margin-top: 0.4em;
+    height: 2em;
+    width: 60em;
+    border: none;
+    font-family: monospace;
+    
 }
 
 /* sets formatting on the startButton */
-#startButton {
+#beginButton {
     margin-top: 0.5em;
     margin-left: auto;
     margin-right: auto;
-    background-color: #4CAF50;
+    background-color: #FA6D68;
+    transition: background-color 0.5s ease;
     border: none;
     color: white;
     width: 8em;
@@ -101,7 +99,8 @@ span {
     margin-top: 0.5em;
     margin-left: auto;
     margin-right: auto;
-    background-color: #4CAF50;
+    background-color: #FA6D68;
+    transition: background-color 0.5s ease;
     border: none;
     color: white;
     width: 8em;
@@ -115,6 +114,23 @@ span {
 }
 
 #healthBox {
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: ghostwhite;
+    opacity: 0.2;
+    box-shadow: 0 0 10px #777777;
+    color: black;
+    width: 11.4em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#keyBox {
     margin-top: 0.5em;
     margin-left: auto;
     margin-right: auto;
@@ -148,23 +164,6 @@ span {
     font-size: 16px;
 }
 
-#placeholderBox2 {
-    margin-top: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: ghostwhite;
-    opacity: 0.2;
-    box-shadow: 0 0 10px #777777;
-    color: black;
-    width: 11.4em;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
 #copyright {
     text-align: right;
     font-family: sans-serif;
@@ -172,7 +171,46 @@ span {
     color: lightgrey
 }
 
+/* CSS rule for rendering Google Material Icons */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;  /* Preferred icon size is 24px */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
 /* defines the blink animation for the underscore */
 @keyframes blink     {
     to {opacity: 0.0;}
+}
+
+button:hover {
+    background-color: #7DCC93 !important;
+    cursor: pointer;
+}
+
+*:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    background: transparent
 }

@@ -10,6 +10,12 @@ module.exports = function (grunt) {
 				dest: 'release/main.js'
 			}
 		},
+        jshint: {
+			options: {
+				jshintrc: '.jshintrc.json'
+			},
+			files: ['release/main.js']
+		},
 		watch: {
 			files: ['js/*.js', 'manifest.json'],
 			tasks: ['default']
@@ -18,8 +24,9 @@ module.exports = function (grunt) {
 
 	// Load Grunt plugins
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Register tasks
-	grunt.registerTask('default', ['concat']);
+	grunt.registerTask('default', ['concat', 'jshint']);
 };
