@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
 		concat: {
 			release: {
-				src: ['js/interface.js', 'js/game.js'],
+				src: ['js/game.js', 'js/interface.js'],
 				dest: 'release/main.js'
 			}
 		},
